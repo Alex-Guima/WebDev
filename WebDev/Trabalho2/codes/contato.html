@@ -23,30 +23,27 @@
                         <a onclick="catalogo()" href="catalogo.html" class="nav-item nav-link text-light">Catálogo</a>
                         <a oclick="contato()" href="contato.html" class="nav-item nav-link text-light">Contato</a>
                         <a onclick="sobre()" href="sobre.html" class="nav-item nav-link text-light">Sobre</a>
+                        <a href="registro.html" class="nav-item nav-link text-light">Registro</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-        <form action="" method="get" class="form-feedback my-3">
+        <form action="contato.php" method="get" class="form-feedback my-3">
             <div class="form-nome mx-3 text-dark">
                 <label for="name">Por favor, nos informe o seu Nome:</label>
-                <input required class="rounded-3" type="text" id="form-nome" placeholder="Nome">
+                <input required class="rounded-3" type="text" name="nome" id="form-nome" placeholder="Nome">
             </div>
             <div class="form-nota mx-3 my-4 text-dark">
                 <label for="form-nota">Avalie sua satisfação com o site:</label>
-                <input required class="rounded-3"   type="number" max="10" min="0" placeholder="10 :)">
+                <input required class="rounded-3" name="nota"  type="number" max="10" min="0" placeholder="10 :)">
             </div>
             <div class="form-texto mx-3 text-dark">
-                <label for="feedback">Nos diga o que podemos melhorar em nossa loja:</label>
-                <textarea class="form-text mx-xl-3 my-xl-3" style="height: 25em; width: 25rem;"></textarea>
+                <label for="feedback">Nos diga o que podemos melhorar em nossa loja:</label></br>
+                <textarea name="feedback" class="form-text mx-xl-3 my-xl-3" style="height: 25em; width: 25rem;"></textarea>
             </div>
-            <div class="text-center mt-4">
-                <p class="lead">
-                    <a href="enviado.html" type="submit" class="btn btn-lg btn-success">
-                    Enviar Formulário
-                    </a> 
-                </p>
+            <div class="text-center">
+                <input type=submit value="Enviar" class="btn btn-lg btn-success">
             </div>
             <div class="text-dark mx-3 my-3">
                 <p>
